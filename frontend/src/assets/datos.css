@@ -1,0 +1,92 @@
+/* Configuración general de la página - SE QUEDA IGUAL */
+body {
+    background-color: #0c0d12; 
+    color: #f5f5f7;            
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título principal de la página - SE QUEDA IGUAL */
+h1 {
+    color: #e23636; 
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #15171e;
+    padding-bottom: 10px;
+    text-align: center; 
+}
+
+/*  CORREGIDO: El contenedor padre ahora solo alinea y centra */
+/*  MODIFICA ESTE BLOQUE EXACTO EN TU DATOS.CSS: */
+#contenedor-card-user {
+    display: grid;
+    place-items: center;       /*  ESTA ES LA SUPER LÍNEA: Centra vertical y horizontalmente al mismo tiempo */
+    width: 100vw;              /* Toma el 100% del ancho real de la ventana del navegador */
+    max-width: 100%;           /* Evita desbordamientos o barras horizontales */
+    margin: 40px auto;         /* Le da una separación elegante con el título y centra la caja completa */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+/*  CORREGIDO: Trasladamos toda tu estética de la tarjeta Marvel a la clase .fila-card */
+.fila-card-user{
+   /* BUSCA ESTE BLOQUE EXACTO EN TU DATOS.CSS Y DÉJALO ASÍ: */
+.fila-card-user {
+    background-color: #15171e; 
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;         
+    
+    /*LÍNEA MÁGICA DE CIERRE: Fuerza al navegador a repartir el espacio en partes iguales a los lados */
+    margin: 0 auto;           
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+    border-bottom: 5px solid #e23636; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding-bottom: 15px; 
+}
+
+}
+
+/* Efecto interactivo: la tarjeta se eleva y destella en rojo */
+.fila-card-user:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(226, 54, 54, 0.3); 
+}
+
+/* Control de la imagen dentro de la tarjeta */
+.fila-card-user img {
+    width: 100%;   
+    height: 380px; /* Le subimos un poco para que tu foto de perfil se vea espectacular */
+    object-fit: cover;  
+    object-position: top; 
+    display: block;
+    margin-bottom: 15px;
+}
+
+/*  NUEVO: Estilo para tu nombre principal en letras grandes h2 */
+.fila-card-user h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Control de los párrafos de datos dentro de la tarjeta */
+.info-personaje p {
+    font-size: 1rem;
+    padding: 8px 20px;
+    margin: 0;
+    color: #b3b8c2; /* Gris claro sutil para los datos */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Separador fino */
+}
+
+/* El primer párrafo (Primer Nombre) resaltará un poco más */
+.info-personaje p:first-of-type {
+    color: #ffffff;
+    font-weight: bold;
+}

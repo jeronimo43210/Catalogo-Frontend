@@ -1,0 +1,64 @@
+/* Configuración general de la página */
+body {
+    background-color: #14110f; /* Acero negro refractario con matiz cálido */
+    color: #f6f5f4;            /* Texto general claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título principal de la página */
+h1 {
+    color: #ff5500; /* Naranja incandescente (Fuego Yang puro) */
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #2a221c;
+    padding-bottom: 10px;
+}
+
+/* Estilo para tus 3 botones de página */
+button {
+    background-color: #1c1815; /* Carbón oscuro */
+    color: #f6f5f4;
+    border: 1px solid #2a221c;
+    padding: 10px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto al pasar el mouse por tus botones */
+button:hover {
+    background-color: #2a221c;
+    box-shadow: 0 0 10px rgba(255, 85, 0, 0.3); /* Resplandor sutil de calor */
+}
+
+/* Texto de "mostrar pagina" */
+p {
+    color: #ab9685; /* Tono ceniza suave */
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+
+/* ======================================================= */
+/* TU VISOR IFRAME CORREGIDO PARA SER RESPONSIVO */
+/* ======================================================= */
+#visor {
+    border: 2px solid #2a221c;
+    background-color: transparent;
+    border-radius: 4px;
+    margin-top: 10px;
+    
+    /* ESTAS PROPIEDADES HACEN QUE EL IFRAME SE ADAPTE AL CELULAR */
+    width: 100%;            /* Ocupa todo el ancho de la pantalla del iPhone */
+    max-width: 100%;        /* Evita que se estire de más y rompa la pantalla */
+   
+    height: 75vh;          /*600 Le da una altura fija cómoda para hacer scroll hacia abajo */
+    overflow-y: auto;
+    box-sizing: border-box;
+}
